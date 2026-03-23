@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/txtProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/txtProfileSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_below="@id/txtProfileTitle"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/txtProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@id/txtProfileSubtitle"
+        android:layout_marginTop="20dp"
+        android:background="@color/surface"
+        android:text="email@example.com"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"/>
+
+    <Button
+        android:id="@+id/btnOpenSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_below="@id/txtProfileEmail"
+        android:layout_marginTop="20dp"
+        android:text="Settings"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_below="@id/btnOpenSettings"
+        android:layout_marginTop="8dp"
+        android:text="Logout"/>
+
+</RelativeLayout>
